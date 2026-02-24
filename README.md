@@ -1,16 +1,5 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🩸 Community Blood Donor FinderA real-time React application designed to bridge the gap between patients in need and life-saving donors. This app allows users to filter donors by blood type, search by location, and send urgent requests with a single click.🚀 FeaturesReal-time Filtering: Instantly filter donors by blood group (A+, B-, O+, etc.).Location Search: Find donors in specific cities using the integrated search bar.Request System: Send help requests and receive instant UI feedback.Dynamic Stats: Real-time count of available donors based on your current filters.Responsive Design: Fully functional on mobile and desktop devices.🛠️ Tech StackFrontend: React.js (Hooks, Functional Components)Data Fetching: Axios / Fetch APIStyling: CSS3 / Tailwind CSS (Optional)Mock Data: JSONPlaceholder🏗️ Architecture & LogicTo simulate a real-world environment using a mock API, the application follows this logic:Data Hydration: On mount, useEffect fetches user data.Data Mapping: Since the API doesn't provide blood types, we programmatically inject random blood groups into the donor objects upon retrieval.Derived State: Instead of storing a separate "filtered list" in state, we calculate the visible donors on the fly based on the searchTerm and selectedGroup.Data Flow Diagram💻 Getting StartedPrerequisitesNode.js (v14 or higher)npm or yarnInstallationClone the repositoryBashgit clone https://github.com/your-username/blood-donor-finder.git
+Install dependenciesBashcd blood-donor-finder
+npm install
+Start the development serverBashnpm start
+🚦 UI StatesStateDescriptionLoadingA spinner appears while fetching data from the API.Empty"No donors found" message appears if filters yield zero results.SuccessInteractive donor cards with "Request Help" functionality.🌟 Bonus Features Implemented[x] Search donors by City[x] Sort by Availability status[x] Persistent "Request Sent" state per donor session📄 LicenseDistributed under the MIT License. See LICENSE for more information.
