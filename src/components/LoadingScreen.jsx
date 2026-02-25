@@ -8,7 +8,7 @@ export default function LoadingScreen() {
   return (
     <div className="loading-screen">
       <div className="loading-icon">🩸</div>
-      <div className="loading-text">BloodConnect</div>
+      <div className="loading-text">RaktSetu</div>
     </div>
   );
 }
